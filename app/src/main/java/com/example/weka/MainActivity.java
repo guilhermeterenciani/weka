@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
+
+
             Instances mnistTrainWeka = new Instances(new BufferedReader(new FileReader( new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS),"mexidao_train.arff"))));
             Instances mnistTestWeka = new Instances(new BufferedReader(new FileReader(new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS),"mexidao_test.arff"))));
             Log.i("MODEL_TIME","carreguei os arquivos");
