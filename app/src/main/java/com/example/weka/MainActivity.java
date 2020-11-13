@@ -41,20 +41,11 @@ public class MainActivity extends AppCompatActivity {
         // tem que incluir os arquivos aqui
         System.out.println("Estou aqui");
         try {
-            File file = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "create_dix");
-            if(file.exists()){
-                System.out.println("Arquivo existe :D");
-                System.out.println(file.getAbsolutePath());
-            }else{
-                BufferedWriter bf = new BufferedWriter(new FileWriter(file));
-                bf.write("Guilherme Figueiredo Terenciani");
-            }
-
-
-
 
             Instances mnistTrainWeka = new Instances(new BufferedReader(new FileReader( new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS),"mexidao_train.arff"))));
+            mnistTrainWeka.setClassIndex(mnistTrainWeka.numAttributes() - 1);
             Instances mnistTestWeka = new Instances(new BufferedReader(new FileReader(new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS),"mexidao_test.arff"))));
+            mnistTestWeka.setClassIndex(mnistTestWeka.numAttributes() - 1);
             Log.i("MODEL_TIME","carreguei os arquivos");
 
 
