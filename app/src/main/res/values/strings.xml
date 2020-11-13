@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">weka</string>
+    <string name="train">raw/train.txt</string>
+    <string name="test">raw/test.txt</string>
+</resources>
