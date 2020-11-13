@@ -2,14 +2,17 @@ package com.example.weka;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.lazy.IBk;
 import weka.core.Instances;
 import weka.core.SelectedTag;
-import weka.core.Tag;
+
 import weka.core.neighboursearch.BallTree;
 import weka.core.EuclideanDistance;
+
+
 
 import android.content.res.AssetManager;
 import android.os.Bundle;
@@ -18,10 +21,10 @@ import android.util.Log;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
+
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
+
 import java.io.IOException;
 import java.io.InputStream;
 
